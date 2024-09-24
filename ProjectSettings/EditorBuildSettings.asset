@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 7ad2705f5517b2a4aba0e7a12f99a1eb
+  - enabled: 1
+    path: Assets/Scenes/birbsky.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Scores.unity
+    guid: fe9babe5e8e47dc4d8fdd2fd4b7b8d3a
+  m_configObjects: {}
