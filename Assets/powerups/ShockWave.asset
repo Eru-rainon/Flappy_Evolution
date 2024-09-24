@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d80fe225a6985fd4e92783803991305e, type: 3}
+  m_Name: ShockWave
+  m_EditorClassIdentifier: 
+  particle: {fileID: 1307658247658736749, guid: 84bb473ae91c3dd4794b9240915e4c6c, type: 3}
+  destruction: {fileID: 9191659218237766047, guid: 7ca05fa2ad495c44abb19e4061186963, type: 3}
+  audiomanager: {fileID: 0}
