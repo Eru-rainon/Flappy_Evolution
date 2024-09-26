@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4167800983220817682}
   - component: {fileID: 7227274609759398318}
   - component: {fileID: 4735879234744492072}
-  - component: {fileID: 234201637735373042}
+  - component: {fileID: 1840627695064433705}
   m_Layer: 0
   m_Name: armor
   m_TagString: Untagged
@@ -145,7 +145,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   effect: {fileID: 11400000, guid: fe910ce067ac6c541a855c613a9020bf, type: 2}
---- !u!114 &234201637735373042
+--- !u!114 &1840627695064433705
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -154,7 +154,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6844619077963078474}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f374558fcd530c149bd2a0b91d9193b7, type: 3}
+  m_Script: {fileID: 11500000, guid: 92d7f9f63d9d2334fa6835e0e8337446, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   movespeed: 8

@@ -10,16 +10,8 @@ public class shockwave : PowerUps
     public audiomanager audiomanager;
     public override void Apply(GameObject target)
     {
-        audiomanager = GameObject.FindGameObjectWithTag("audio").GetComponent<audiomanager>();
-        Instantiate(particle,target.transform.position,Quaternion.identity);
-        audiomanager.playSFX(audiomanager.shockwave);
-        GameObject[] Obstacles = GameObject.FindGameObjectsWithTag("obstacle");
-        foreach(GameObject obstacle in Obstacles){
-            
-            Instantiate(destruction,obstacle.transform.position,Quaternion.identity);
-            
-            Destroy(obstacle);
-        }
+        target.GetComponent<birb>().bomb = true;
+        target.GetComponent<birb>().bombButton.SetActive(true);
     }
 }
 

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1800874984018925901}
   - component: {fileID: 6005414326063980903}
   - component: {fileID: 427004763812866259}
-  - component: {fileID: 521002376208313585}
+  - component: {fileID: 2497506355333234801}
   m_Layer: 0
   m_Name: 2Xscore
   m_TagString: Untagged
@@ -145,7 +145,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 16.58, y: 15.99}
   m_EdgeRadius: 0
---- !u!114 &521002376208313585
+--- !u!114 &2497506355333234801
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -154,7 +154,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6091724037583691564}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f374558fcd530c149bd2a0b91d9193b7, type: 3}
+  m_Script: {fileID: 11500000, guid: 92d7f9f63d9d2334fa6835e0e8337446, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   movespeed: 8

@@ -18,6 +18,9 @@ public class audiomanager : MonoBehaviour
     public AudioClip gameover;
     public AudioClip highscore;
     public AudioClip click;
+    public AudioClip pipeDestroyed;
+    public AudioClip fireworks;
+    
 
     private void Start(){
         int musicno = Random.Range(0,3);

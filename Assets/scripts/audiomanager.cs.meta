@@ -3,7 +3,20 @@ guid: fe33c00678038f74e9a615b62e94616c
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - musicsource: {instanceID: 0}
+  - SFXsource: {instanceID: 0}
+  - flap: {instanceID: 0}
+  - scoreup: {instanceID: 0}
+  - pipehit: {instanceID: 0}
+  - scoremultiplier: {instanceID: 0}
+  - armor: {instanceID: 0}
+  - shockwave: {instanceID: 0}
+  - gameover: {instanceID: 0}
+  - highscore: {instanceID: 0}
+  - click: {instanceID: 0}
+  - pipeDestroyed: {instanceID: 0}
+  - fireworks: {fileID: 8300000, guid: 69cf9b441c3447348ac0569e84ab3b48, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

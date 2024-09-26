@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using JetBrains.Annotations;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -18,6 +19,9 @@ public class birb : MonoBehaviour
     public audiomanager audiomanager;
     public GameObject spawner;
     bool clicked;
+    public bool bomb;
+    public GameObject particle;
+    public GameObject bombButton;
     void Start()
     {
         logic = GameObject.FindGameObjectWithTag("logic").GetComponent<logicscript>();
@@ -25,6 +29,8 @@ public class birb : MonoBehaviour
         clicked = false;
         bird.gravityScale = 0f;
         spawner.SetActive(false);
+        bomb = false;
+        bombButton.SetActive(false);
     }
 
     // Update is called once per frame
@@ -35,9 +41,14 @@ public class birb : MonoBehaviour
                 if(!clicked){
                     bird.gravityScale = 3.33f;
                     spawner.SetActive(true);
+                    clicked = true;
                 }
             bird.velocity =  Vector2.up*flapStrength;
             audiomanager.playSFX(audiomanager.flap);
+            if(Input.GetKeyDown(KeyCode.Space)){
+                Debug.Log("space pressed");
+            }
+            
         }
         }
 
@@ -48,6 +59,12 @@ public class birb : MonoBehaviour
                 logic.gameover();
         }
         }
+
+        if(bomb && Input.GetMouseButtonDown(1))
+    {
+        useBomb(); 
+    }
+
         
     }
 
@@ -55,7 +72,7 @@ public class birb : MonoBehaviour
         if(invincible){
             Instantiate(destruction,collision.gameObject.transform.position,Quaternion.identity);
             Destroy(collision.gameObject);
-
+            audiomanager.playSFX(audiomanager.pipeDestroyed);
             
         }
         if(skill  && !invincible){
@@ -64,5 +81,20 @@ public class birb : MonoBehaviour
             if(!skill)
                 logic.gameover();
         }
+    }
+
+    public void useBomb(){
+         Instantiate(particle,transform.position,Quaternion.identity);
+        audiomanager.playSFX(audiomanager.shockwave);
+        GameObject[] Obstacles = GameObject.FindGameObjectsWithTag("obstacle");
+        foreach(GameObject obstacle in Obstacles){
+            
+            Instantiate(destruction,obstacle.transform.position,Quaternion.identity);
+            
+            Destroy(obstacle);
+            audiomanager.playSFX(audiomanager.pipeDestroyed);
+        }
+        bomb = false;
+        bombButton.SetActive(false);
     }
 }

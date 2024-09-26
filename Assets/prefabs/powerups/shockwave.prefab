@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5436042993074129453}
   - component: {fileID: 7330676425076607505}
   - component: {fileID: 3898300337791697228}
-  - component: {fileID: 3078212669676751451}
+  - component: {fileID: -1396890882687343769}
   m_Layer: 0
   m_Name: shockwave
   m_TagString: Untagged
@@ -145,7 +145,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   effect: {fileID: 11400000, guid: 3b7be53abe40d1c448dd08aea5e93806, type: 2}
---- !u!114 &3078212669676751451
+--- !u!114 &-1396890882687343769
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -154,7 +154,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6117882345963143724}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f374558fcd530c149bd2a0b91d9193b7, type: 3}
+  m_Script: {fileID: 11500000, guid: 92d7f9f63d9d2334fa6835e0e8337446, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   movespeed: 8

@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
-using Microsoft.Unity.VisualStudio.Editor;
+
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -39,7 +39,7 @@ public class menuManager : MonoBehaviour
      for (int i = 0; i < difficultybuttons.Length; i++)
     {
         // Get the Image component of the difficulty button
-        UnityEngine.UI.Image buttonImage = difficultybuttons[i].GetComponent<UnityEngine.UI.Image>();
+       Image buttonImage = difficultybuttons[i].GetComponent<Image>();
 
         // Set the image to 'onstate' for the selected difficulty, 'offstate' for others
         if (i == PlayerPrefs.GetInt("difficulty",2)-1)

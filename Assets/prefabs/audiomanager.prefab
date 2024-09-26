@@ -61,6 +61,8 @@ MonoBehaviour:
   gameover: {fileID: 8300000, guid: 336fd3d19f5f75b4994913f9693d03f5, type: 3}
   highscore: {fileID: 8300000, guid: 8684049f6c8f6044ba33335af262d9e8, type: 3}
   click: {fileID: 8300000, guid: dc96610e7734fbb4a99e3d7b1c287436, type: 3}
+  pipeDestroyed: {fileID: 8300000, guid: e1b19b2d506fdf84f97b28de8f829df4, type: 3}
+  fireworks: {fileID: 8300000, guid: 69cf9b441c3447348ac0569e84ab3b48, type: 3}
 --- !u!1 &6507715789992689126
 GameObject:
   m_ObjectHideFlags: 0
