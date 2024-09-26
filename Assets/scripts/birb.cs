@@ -22,7 +22,10 @@ public class birb : MonoBehaviour
     public bool bomb;
     public GameObject particle;
     public GameObject bombButton;
-    void Start()
+    public int armorcount;
+    public int multiplierCount;
+
+       void Start()
     {
         logic = GameObject.FindGameObjectWithTag("logic").GetComponent<logicscript>();
         skill = true;
@@ -31,6 +34,8 @@ public class birb : MonoBehaviour
         spawner.SetActive(false);
         bomb = false;
         bombButton.SetActive(false);
+        armorcount = 0;
+       
     }
 
     // Update is called once per frame

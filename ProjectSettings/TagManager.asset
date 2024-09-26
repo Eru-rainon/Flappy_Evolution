@@ -8,6 +8,9 @@ TagManager:
   - middle
   - obstacle
   - audio
+  - shieldtimer
+  - timer
+  - multipliertimer
   layers:
   - Default
   - TransparentFX
